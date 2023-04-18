@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>ControlPanel.qml</file>
+        <file>ScopeView.qml</file>
+        <file>SetupWindow.qml</file>
+        <file>PortEnumerator.qml</file>
+        <file>PortModel.qml</file>
+        <file>ControlPanelTop.qml</file>
+        <file>gear_icon.png</file>
+        <file>SidePanel.qml</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,147 @@
+:SYSTem:
+TIMe 16 12 27;
+DATe 6 6 2019;
+
+
+:TRIGger:
+TYPe 0;			тип триггера 	0-Край	1-видео	2-пульс	3-задержка
+COUPle 1;		0-AC	1-DC
+LEVel 1.08V ;	уровень
+MODe 1;			0-автоуровень	1-авто 	2-обычный	3-одинарный
+NREJ 0;			шумоподавление	0-откл	1-вкл
+REJect 0;		
+SLOP 0;			
+SOURce 0;		0-1ый канал		1-2ой канал
+
+
+ADVance:
+DELay 100ns;
+EVENt 3;
+LEVel 1.48V ;
+MODe 0;
+TYPe 0;
+PULSe:TIMe 2.000E-08 ;
+MODe: 0;
+
+
+TV:
+FIELd 1;
+LINe 1;
+POLarity 1;
+TYPe 1;
+
+
+:ACQuire:
+AVERage 1;		\\среднее арифм из нескольких волн. Страница 26
+LENGth 500;		\\длина	(еще можно 12500 но с ней невозможно работать)
+MODe 0;			\\0- нормальный режим	1-пики	2-среднее
+POINt;			\\хз что
+
+
+:DISPlay:
+WAVeform 0;			\\0-вектора 1-точки
+DISPCONTrast -3;	\\контраст +-1 единица 
+GRATicule 0;		\\сетка на экране	0-полная	1-частичная		2-только внешняя рамка
+
+
+:CURSor:
+SOURce 5;
+X1Position -620.0us ;	
+X2Position  560.0us ;
+Y1Position  10.4mV  ;
+Y2Position -10.4mV  ;
+XDELTa  1.180ms ;
+YDELTa  20.8mV  ;
+XDISPlay 3;			0-выкл курсор
+YDISPlay 3;			1-вкл курсор
+
+
+:CHANnel1:
+BWLimit 0;
+COUPling 0;
+DISPlay 1;
+INVert 0;
+MATH 0;
+OFFSet 4.600e-01;
+PROBe 0;
+SCALe 1.000e+00;
+
+
+:CHANnel2:
+BWLimit 0;
+COUPling 0;
+DISPlay 1;
+INVert 0;
+MATH 0;
+OFFSet 2.080e-01;
+PROBe 0;
+SCALe 2.000e-01;
+
+
+:MEASure:
+SOURce 1;
+FALL ?;
+FREQuency 1.000kHz;
+NWIDth ?;
+PDUTy 50.00%;
+PERiod ?;
+PWIDth ?;
+RISe 8.000us;
+VAMPlitude ?;	VHI-VLO
+VAVerage ?;
+VHI ?;
+VLO ?;
+VMAX 2.12V  ;
+VMIN 80.0mV  ;
+VPP ?;			VMAX-VMIN
+VRMS ?;
+ROVShoot ?;
+FOVShoot ?;
+RPReshoot ?;
+FPReshoot ?;
+
+
+:MEASure:
+SOURce 2;
+FALL ?;
+FREQuency ?;
+NWIDth ?;
+PDUTy ?;
+PERiod ?;
+PWIDth ?;
+RISe ?;
+VAMPlitude ?;
+VAVerage ?;
+VHI ?;
+VLO ?;
+VMAX 24.0mV  ;
+VMIN ?;
+VPP ?;
+VRMS ?;
+ROVShoot ?;
+FOVShoot ?;
+RPReshoot ?;
+FPReshoot ?;
+
+DELAY1 1;
+DELAY2 2;
+
+FRRDelay ?;
+FRFDelay ?;
+FFRDelay ?;
+FFFDelay ?;
+LRRDelay ?;
+LRFDelay ?;
+LFRDelay ?;
+LFFDelay ?;
+
+:TIMebase:
+DELay 0.000e+00;
+SCALe 2.500e-04;
+SWEep 0;
+
+:AUToset;
+:PRINt;
+:REFResh;
+:RUN;
+:STOP
